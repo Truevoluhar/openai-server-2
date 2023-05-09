@@ -189,7 +189,7 @@ router.post("/askk", async (req, res) => {
 router.post("/askkk", async (req, res) => {
   let data = req.body.newObject;
   let shortFileName = () => {
-    let x = data.name.split(".");
+    let x = data.name.split(".").join("");
     let y = x[0].split(" ").join("");
     return x[0];
   }
@@ -220,9 +220,8 @@ router.post("/summarize", async (req, res) => {
   let data = req.body.data;
   let fileName = data.name;
   let shortFileName = () => {
-    let x = fileName.split(".");
-    let y = x[0].split(" ").join("");
-    return y;
+    let x = fileName.split(".")[0];
+    return x;
   }
   let inputFilePath = `./files/${fileName}`
   let outputFilePath = `./txtfiles/${shortFileName()}.txt`
