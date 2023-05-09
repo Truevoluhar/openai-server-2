@@ -1,0 +1,54 @@
+Spoštovani,
+
+
+
+Pred vami je spletna aplikacija za izvajanje in spremljanje participativnega proračuna »Lokalni projektant«. Aplikacija je namenjena digitalizaciji občine, neposrednega pridobivanja mnenj občanov ali celo uvedbe soodločanja pri občinskih projektih.
+
+
+
+Aplikacija je enostavna za uporabnike, ljudem daje zadovoljstvo in občutek, da tudi v času, ko niso volitve, participirajo pri odločanju o tem, kaj se bo v očini dogajalo in kaj bo narejenega z denarjem občinskega proračuna.
+
+
+
+Na kratko, aplikacija omogoča:
+
+Predlaganje projektov z implementacijo Google Maps zemljevidov, fotografij in opisov projektov;
+
+Glasovanje za projekte;
+
+Spremljanje predlaganih projektov in sprejemanje odločitev na podlagi neposrednega mnenja občanov.
+
+
+
+Občina lahko z aplikacijo verificira svoje projekte, ki jih v prihodnjih leti načrtuje in o teh projektih seznanja občane, ki imajo možnost, da preko aplikacije o njih tudi glasujejo, ali pa občani v aplikaciji sami predlagajo projekte in o njih prav tako lahko glasujejo.
+
+
+
+Aplikacija je prilagojena za uporabo na napravah vseh velikosti. Vse funkcionalnosti in vizualizacijo lahko prilagodimo po vaših željah in potrebah.
+
+
+
+Povezava do testnega okolja aplikacije, v katero se prijavite z uporabniškim imenom prevalje in geslom prevalje: https://o179vm.csb.app/
+
+
+
+Povezava do spletne strani s kontakti: https://lokalniprojektant.si/
+
+
+
+
+
+Za sodelovanje in predstavitev aplikacije vam in vašim zaposlenim lahko pokličete na 041315212 ali na jon.petek@lokalniprojektant.si.
+
+
+
+Veselimo se skupnega razvoja vaše občine!
+
+
+
+Lep pozdrav,
+
+Jon Petek
+
+
+

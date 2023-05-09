@@ -1,0 +1,290 @@
+Miro Petek Celovska cesta 60 ,
+
+Invoice number
+
+2023-SAL7-001204659
+
+Invoice date
+
+2/15/2023
+
+Date of issue
+
+2/15/2023
+
+
+
+2392 Mezica
+
+SVN
+
+
+
+
+
+
+
+
+
+Note	.
+
+
+
+
+
+
+
+
+
+Description
+
+
+
+Amount
+
+Mediation service of the following travel service
+
+
+
+
+
+BSP flights
+
+PNR Ticket: W486FP (11212361883)
+
+(1)
+
+191,93
+
+Itinerary: LJU - BRU
+
+
+
+
+
+Issued date: 15/02/2023
+
+
+
+
+
+BSP flights
+
+(1)
+
+179,13
+
+PNR Ticket: W42ZSL (11212361883)
+
+
+
+
+
+Itinerary: BRU - LJU
+
+
+
+
+
+Issued date: 15/02/2023
+
+
+
+
+
+BSP flights
+
+(1)
+
+12,00
+
+PNR Ticket: W486FP (11212361883)
+
+
+
+
+
+Itinerary: BRU - LJU
+
+
+
+
+
+Issued date: 15/02/2023
+
+
+
+
+
+BSP flights
+
+(1)
+
+12,00
+
+PNR Ticket: W42ZSL (11212361883)
+
+
+
+
+
+Itinerary: LJU - BRU
+
+
+
+
+
+Issued date: 15/02/2023
+
+
+
+
+
+Intermediation Service
+
+
+
+
+
+
+
+64,95
+
+Prime Fee
+
+
+
+
+
+
+
+
+
+Prime Discount
+
+
+
+
+
+
+
+-47,87
+
+Promotional Discount
+
+
+
+
+
+
+
+0,00
+
+TOTAL CHARGE
+
+
+
+
+
+
+
+412,14
+
+
+
+
+
+
+
+
+
+
+
+Intermediation Service
+
+VAT %
+
+Taxable amount
+
+Tax
+
+Total
+
+
+
+0,00
+
+31,98
+
+0,00
+
+31,98
+
+
+
+Miro Petek Celovska cesta 60 , 2392 Mezica
+
+Invoice number
+
+2023-SAL7-001204659
+
+Invoice date
+
+2/15/2023
+
+Date of issue
+
+2/15/2023
+
+
+
+SVN
+
+
+
+
+
+
+
+
+
+Note	.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Total intermediation fees invoiced by Vacaciones eDreams S.L.U.
+
+EUR 31,98	EUR 0,00	EUR 31,98
+
+
+
+
+
+
+
+
+
+Total amount
+
+EUR 412,14
+
+As Vacaciones eDreams S.L.U. acts as a disclosed agent, the price of the travel service is shown only for informative purposes. For more details, please see our Help Centre.
+
+
+
+(1), Amount collected by Vacaciones eDreams S.L.U. and passed-on to the travel supplier (2), Amount paid directly to the travel supplier
+

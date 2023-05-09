@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dohtar</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Dohtar</h1>
+    <p>Pozdravljeni pri virtualnem zdravniku</p>
+    <div class="conversation">
+      <% conversation.forEach((x) => { %>
+        <p><%=x.message%></p>
+     <% }) %>
+    </div>
+    <div class="messages">
+      <form action="/submit" method="post">
+        <input name="input" class="input_text" />
+        <button class="submitbutton" type="submit">Pošlji</button>
+      </form>
+    </div>
+  </body>
+</html>

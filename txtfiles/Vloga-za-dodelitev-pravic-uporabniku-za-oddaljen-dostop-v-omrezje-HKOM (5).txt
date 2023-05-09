@@ -1,0 +1,94 @@
+Vloga za dodelitev pravic uporabniku za oddaljen dostop v omrežje HKOM
+
+Št. vloge (izpolni MDP): _____________________________________________________________________________
+
+1. Status imetnika pravic (obvezno označiti samo eno od možnosti)
+
+□ Nov uporabnik	□ Obstoječ uporabnik (dodelitev dodatnih pravic)	□ Prenos geselnika_________________
+
+2. Podatki o imetniku sredstva močnega overjanja (z enkratnim geslom)
+
+Telefon (GSM, mobilni)
+
+Ime in priimek _____________________________________  (obvezno izpolniti za SMS overjanje) ____________________
+
+
+
+Elektronski naslov _____________________________________________________________________________________
+
+3. Podatki o organizaciji (delodajalec) (obvezno izpolniti v celoti)
+
+Uradni naziv organizacije ___________________________________________________________________________
+
+
+
+Elektronski naslov organizacije _____________________________________________________________________
+
+
+
+Naslov organizacije in pošta ________________________________________________________________________
+
+Sredstvo močnega overjanja (z enkratnim geslom)
+
+(izbrati prednostno možnost, sicer ga določi MDP glede na razpoložljivost licenc)
+
+□ Geselnik OTP naprava 		□ Geselnik SMS 	□ Geselnik Aplikacija  
+
+(obvezno izpolniti 2. točko – GSM)		(obvezno izpolniti 2. točko – GSM)
+
+Povezava v omrežje HKOM prek interneta z uporabo tehnologije VPN (storitve)
+
+□ 5.1 ODDO PORTAL (portal.oddo.gov.si) - (označi samo neposredni proračunski uporabnik prvega reda po RPU)
+
+□ 5.2 ISL - Storitev oddaljenega namizja na https://isl.gov.si (uradna zamenjava za TeamViewer, MS RDP, ipd)
+
+□ 5.3 Povezava do informacijskih virov znotraj omrežja HKOM (Vpisati je potrebno IP naslov, domensko ime strežnika
+
+(storitve) ter aplikacijska vrata)
+
+Lokalno omrežje organizacije: ____________________________________________________________________
+
+Storitev / strežnik (ip, dns, port): _______________________________________________________________
+
+Storitev / strežnik (ip, dns, port): __________________________________________________________________
+
+Izjava organizacije
+
+
+
+Potrjujemo, da so navedeni osebni podatki resnični in točni in jih posredujemo v skladu z 48. členom Zakona o delovnih razmerjih uporabniku in pogodbenemu partnerju. Ministrstvo, pristojno za informatiko v državni upravi sme navedene osebne podatke uporabljati izključno za izvajanje te pogodbe. Izjavljamo, da bomo v primeru, da stroškov uporabe storitev centralnega informacijsko komunikacijskega sistema naši organizaciji v skladu s predpisi ne krije državni proračun, stroške od dneva odobritve dodelitve pravic uporabniku dalje sami plačevali v skladu z veljavnim cenikom in da smo obvestilo po 13. in 14. členu Splošne uredbe o varstvu podatkov izročili imetniku sredstva močnega overjanja.
+
+ime, priimek in podpis predstojnika oziroma
+
+žig	pooblaščene osebe uporabnika
+
+V	, dne	
+
+
+
+Soglasje lastnika vira (Vir je lahko omrežje, strežnik ali aplikacija. Lastnik vira je organizacija, ki je izvedla nakup opreme)
+
+
+
+Kot lastnik vira v omrežju HKOM, za katerega se dodeljujejo pravice dostopa, opredeljene v točki 5.3., zagotavljam, da uporabnik v celoti ustreza pogojem šestega odstavka 74.a člena Zakona o državni upravi.
+
+ime, priimek in podpis predstojnika oziroma
+
+žig	pooblaščene osebe uporabnika
+
+
+
+V ________________________, dne______________________
+
+8. Odobritev dodelitve pravic uporabniku (izpolni MDP)
+
+V Ljubljani, dne _______________________________Podpis upravitelja omrežja in licenc _____________________________
+
+Navodila za izpolnjevanje obrazca:
+
+Ta obrazec je potrebno izpolniti za vsakega imetnika (osebo) pri uporabniku (delodajalcu) razločno in z velikimi tiskanimi črkami. Podatke o poslovnih subjektih, MDP preverja v uradnih evidencah. Vsakih šest mesecev bo skrbnik storitve Oddaljeni dostopi pregledal statistiko uporabe in izbrisal neaktivne uporabnike brez dodatnega opozorila. Za neaktivnega uporabnika se šteje uporabnik oddaljenega dostopa, ki je registriran v zbirki prijav, a se v zadnjih šestih mesecih ni uspešno prijavil v sistem. Pregled statistike bo izveden dvakrat letno, v začetku aprila in v začetku oktobra. Opomba: Pregled statistike in izbris neaktivnih uporabnikov se izvede samo za neposredne proračunske uporabnike, tiste ki jim stroške povezave krije državni proračun.
+
+Skenogram obrazca je potrebno poslati na elektronski naslov: geselniki.mju@gov.si
+
+ali v papirni obliki na Ministrstvo za digitalno preobrazbo, Davčna ulica 1, 1000 Ljubljana, da sta vidna žig in podpis.
+
