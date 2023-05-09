@@ -3,7 +3,7 @@ var router = express.Router();
 const { Configuration, OpenAIApi } = require("openai");
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: process.env['OAI_KEY'],
 });
 const openai = new OpenAIApi(configuration);
 
@@ -24,19 +24,19 @@ router.post('/dohtar', (req, res) => {
 })
 
 router.get('/dohtar', async (req, res) => {
-    if (conversation.length === 0) {
-      let firstObject = {
-        isUser: false,
-        message: introString
-      }
-      conversation.push(firstObject);
-      res.render('dohtar', {conversation: conversation});
-    } else {
-      res.render('dohtar', {conversation: conversation});
+  if (conversation.length === 0) {
+    let firstObject = {
+      isUser: false,
+      message: introString
     }
+    conversation.push(firstObject);
+    res.render('dohtar', { conversation: conversation });
+  } else {
+    res.render('dohtar', { conversation: conversation });
+  }
 });
 
-router.post('/submit', async(req, res) => {
+router.post('/submit', async (req, res) => {
   let message = req.body.input;
   let messageObject = {
     isUser: true,
@@ -50,7 +50,7 @@ router.post('/submit', async(req, res) => {
     if (!convo.isUser) {
       prompt += `Zdravnik: ${convo.message};`;
     } else {
-      prompt += `Pacient: ${convo.message};`; 
+      prompt += `Pacient: ${convo.message};`;
     }
   });
   const completion = await openai.createCompletion({
@@ -64,7 +64,7 @@ router.post('/submit', async(req, res) => {
     message: completion.data.choices[0].text
   }
   conversation.push(responseObject);
-  res.render('dohtar', {conversation: conversation});
+  res.render('dohtar', { conversation: conversation });
 });
 
 

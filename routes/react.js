@@ -6,10 +6,14 @@ const fs = require("fs");
 const { Configuration, OpenAIApi } = require("openai");
 const pdfParse = require('pdf-parse');
 
+const mySecret = process.env['OAI_KEY']
+
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: mySecret,
 });
 const openai = new OpenAIApi(configuration);
+
+
 
 
 const storage = multer.diskStorage({

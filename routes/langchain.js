@@ -4,6 +4,8 @@ const mammoth = require("mammoth");
 const fs = require("fs");
 const { OpenAI } = require("langchain/llms/openai");
 
+const mySecret = process.env['OAI_KEY']
+
 
 
 
@@ -77,7 +79,7 @@ router.get("/", async (req, res) => {
 
 router.get("/mem", async (req, res) => {
   const text = fs.readFileSync("./txtfiles/langtestfile.txt", "utf8");
-  const model = new OpenAI({ openAIApiKey: "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", temperature: 0.5 });
+  const model = new OpenAI({ openAIApiKey: mySecret, temperature: 0.5 });
   const textSplitter = new RecursiveCharacterTextSplitter({ chunkSize: 1000 });
   const docs = await textSplitter.createDocuments([text]);
 
@@ -94,8 +96,8 @@ router.get("/mem", async (req, res) => {
 
 
 router.get("/smem", async (req, res) => {
-  const embeddings = new OpenAIEmbeddings({ openAIApiKey: "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" });
-  const model = new OpenAI({ openAIApiKey: "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", temperature: 0.9 });
+  const embeddings = new OpenAIEmbeddings({ openAIApiKey: mySecret });
+  const model = new OpenAI({ openAIApiKey: mySecret, temperature: 0.9 });
   const chain = loadQARefineChain(model);
 
   // Load the documents and create the vector store
@@ -126,7 +128,7 @@ router.get("/smem", async (req, res) => {
 
 router.get("/xmem", async (req, res) => {
   const fileContent = fs.readFileSync('./txtfiles/zakontest.txt', 'utf8');
-  const llmA = new OpenAI({ openAIApiKey: "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", temperature: 0.9 });
+  const llmA = new OpenAI({ openAIApiKey: mySecret, temperature: 0.9 });
   const chainA = loadQAStuffChain(llmA);
   const docs = [
     new Document({ pageContent: fileContent }),
@@ -143,13 +145,13 @@ router.get("/xmem", async (req, res) => {
 
 
 router.get("/ask", async (req, res) => {
-  const model = new OpenAI({ openAIApiKey: "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", temperature: 0.9 });
+  const model = new OpenAI({ openAIApiKey: mySecret, temperature: 0.9 });
   const text = fs.readFileSync(`./txtfiles/2022-01-1186-2013-01-0784-npb11.txt`, "utf8");
   const textSplitter = new RecursiveCharacterTextSplitter({ chunkSize: 2000 });
   const docs = await textSplitter.createDocuments([text]);
 
   // Create a vector store from the documents.
-  const vectorStore = await HNSWLib.fromDocuments(docs, new OpenAIEmbeddings({ openAIApiKey: "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" }));
+  const vectorStore = await HNSWLib.fromDocuments(docs, new OpenAIEmbeddings({ openAIApiKey: mySecret }));
 
   // Create a chain that uses the OpenAI LLM and HNSWLib vector store.
   const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever());
@@ -166,11 +168,11 @@ router.post("/askk", async (req, res) => {
     let y = x[0].split(" ").join("");
     return y;
   }
-  const model = new OpenAI({ openAIApiKey: "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", temperature: 0.9 });
+  const model = new OpenAI({ openAIApiKey: mySecret, temperature: 0.9 });
   const text = fs.readFileSync(`./txtfiles/${shortFileName()}.txt`, "utf8");
   const textSplitter = new RecursiveCharacterTextSplitter({ chunkSize: 1000 });
   const docs = await textSplitter.createDocuments([text]);
-  const vectorStore = await HNSWLib.fromDocuments(docs, new OpenAIEmbeddings({ openAIApiKey: "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" }));
+  const vectorStore = await HNSWLib.fromDocuments(docs, new OpenAIEmbeddings({ openAIApiKey: mySecret }));
   const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever());
   const x = await chain.call({
     query: data.content,
@@ -191,11 +193,11 @@ router.post("/askkk", async (req, res) => {
     let y = x[0].split(" ").join("");
     return x[0];
   }
-  const model = new OpenAI({ openAIApiKey: "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", temperature: 0.9, model: "gpt-3.5-turbo" });
+  const model = new OpenAI({ openAIApiKey: mySecret, temperature: 0.9, model: "gpt-3.5-turbo" });
   const text = fs.readFileSync(`./txtfiles/${shortFileName()}.txt`, "utf8");
   const textSplitter = new RecursiveCharacterTextSplitter({ chunkSize: 1000 });
   const docs = await textSplitter.createDocuments([text]);
-  const vectorStore = await HNSWLib.fromDocuments(docs, new OpenAIEmbeddings({ openAIApiKey: "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" }));
+  const vectorStore = await HNSWLib.fromDocuments(docs, new OpenAIEmbeddings({ openAIApiKey: mySecret}));
   const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever());
   const x = await chain.call({
     query: data.content,
@@ -227,7 +229,7 @@ router.post("/summarize", async (req, res) => {
 
   const text = fs.readFileSync(outputFilePath, "utf8");
   console.log(text);
-  const model = new OpenAI({ openAIApiKey: "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", temperature: 0.9, model: "gpt-3.5-turbo" });
+  const model = new OpenAI({ openAIApiKey: mySecret, temperature: 0.9, model: "gpt-3.5-turbo" });
   const combineDocsChain = loadSummarizationChain(model);
   const chain = new AnalyzeDocumentChain({
     combineDocumentsChain: combineDocsChain,

@@ -25,7 +25,7 @@ router.get("/ajpesreq", async (req, res) => {
     iTip: 1,
     iMaxRec: 20,
     Ident: {
-      string: ['wsPrsInfoTest', 'geslo', 'PRS_MN_E']
+      string: ['wsPrsInfoTest', 'wsprsinfo', 'PRS_MN_E']
     }
   };
 
