@@ -5,7 +5,7 @@ const fs = require("fs");
 const { OpenAI } = require("langchain/llms/openai");
 
 const mySecret = process.env['OAI_KEY']
-
+const testVariable = "testVariable"
 
 
 
@@ -197,7 +197,7 @@ router.post("/askkk", async (req, res) => {
   const text = fs.readFileSync(`./txtfiles/${shortFileName()}.txt`, "utf8");
   const textSplitter = new RecursiveCharacterTextSplitter({ chunkSize: 1000 });
   const docs = await textSplitter.createDocuments([text]);
-  const vectorStore = await HNSWLib.fromDocuments(docs, new OpenAIEmbeddings({ openAIApiKey: mySecret}));
+  const vectorStore = await HNSWLib.fromDocuments(docs, new OpenAIEmbeddings({ openAIApiKey: mySecret }));
   const chain = RetrievalQAChain.fromLLM(model, vectorStore.asRetriever());
   const x = await chain.call({
     query: data.content,
