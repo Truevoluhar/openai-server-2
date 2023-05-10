@@ -4,7 +4,7 @@ const mammoth = require("mammoth");
 const fs = require("fs");
 const { OpenAI } = require("langchain/llms/openai");
 
-const mySecret = process.env['OAI_KEY']
+const mySecret = process.env.AIKEY
 const testVariable = "testVariable"
 
 
